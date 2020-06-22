@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf=8">
+    <title>乃木坂推しメン診断</title>
+    <h1 class="title">推しメン診断〜乃木坂編〜</h1>
+    <p class="exp">質問に答えてオススメのメンバーを見つけよう！</p>
+    <p class="question">Q8. 好きなのは精神年齢が大人？子ども？</p>
+    <style>
+      h1.title {
+        text-align: center;
+        font-size: 400%;
+      }
+      p.exp {
+        text-align: center;
+        font-size: 200%;
+      }
+      p.question{
+        text-align: center;
+        font-size: 300%;
+      }
+      body {
+        
+        flex-wrap: wrap;
+        background-image: url("メンバー/画像/乃木坂ロゴ.jpg" );
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+       }
+      .box{
+        width: 600px;
+        height: 100px;
+        background-color: purple;
+        cursor: pointer;
+        transition: 0.8s;
+        margin:0 auto 200px auto;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-size: 200%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='box' id="target1">大人な人がいいです！</div>
+    <div class='box' id="target2">子どもっぽい方がいいです！</div>
+  
+    <script>
+      'use strict';
+
+      const get1 = document.getElementById('target1')
+      const get2 = document.getElementById('target2')
+      
+      get1.addEventListener('click', () =>{
+          window.location.href='メンバー/筒井あやめ.html';
+      }
+      );
+      get2.addEventListener('click', () =>{
+          window.location.href='メンバー/掛橋沙耶香.html';
+      }
+      );
+
+    </script>
+      
+  </body>
+</html>
